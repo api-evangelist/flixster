@@ -1,8 +1,29 @@
 aid: flixster
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flixster.png
 name: Flixster
-description: Flixster is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Flixster is an American movie-discovery and social entertainment brand founded
+  in 2007 that let people rate and review movies, browse local showtimes, watch
+  trailers, and share what they were watching. It grew into one of the largest
+  movie communities on the web and mobile, and in 2011 was acquired by Warner
+  Bros. together with Rotten Tomatoes; Fandango Media later acquired both Flixster
+  and Rotten Tomatoes from Warner Bros. in 2016. The Flixster Video digital-locker
+  service (built on UltraViolet) was shut down in 2019. The flixster.com property
+  no longer operates as an independent consumer site — it now redirects to
+  Fandango, and Flixster does not publish a public developer API, developer
+  portal, or API documentation. This profile is maintained in the API Evangelist
+  network as a company/brand record; there is no live API surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/flixster/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +31,33 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: no-public-api
+x-notes: flixster.com 302-redirects to fandango.com (Fandango Media); brand absorbed into Fandango.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Movies
+- Entertainment
+- Showtimes
+- Movie Ratings
+- Ticketing
+- Media
+- Fandango
+common:
+- type: Website
+  url: https://www.flixster.com
+- type: DomainSecurity
+  url: security/flixster-domain-security.yml
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
