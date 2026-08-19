@@ -33,7 +33,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: no-public-api
 x-notes: flixster.com 302-redirects to fandango.com (Fandango Media); brand absorbed into Fandango.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
